@@ -1,6 +1,5 @@
 # ble-tools
 
-[![Build Status](https://drone.io/github.com/bcdevices/ble-tools/status.png)](https://drone.io/github.com/bcdevices/ble-tools/latest)
 [![GoDoc](https://godoc.org/github.com/bcdevices/ble-tools?status.svg)](https://godoc.org/github.com/bcdevices/ble-tools)
 [![Go Report Card](https://goreportcard.com/badge/github.com/bcdevices/ble-tools)](https://goreportcard.com/report/github.com/bcdevices/ble-tools)
 
