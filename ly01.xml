@@ -1,0 +1,192 @@
+<?xml  version="1.0" encoding="UTF-8"?>
+<device name="Ly01">
+<service name="Upgrade Service" uuid="a86abc2dd44c442e99f780059a873e36">
+    <characteristic name="Control Point" uuid="1bd19c14b78a4e0faeb58e0352bac382">
+        <requirement>Mandatory</requirement>
+        <Properties>
+            <Read>Excluded</Read>
+            <Write>Mandatory</Write>
+            <WriteWithoutResponse>Excluded</WriteWithoutResponse>
+            <SignedWrite>Excluded</SignedWrite>
+            <ReliableWrite>Excluded</ReliableWrite>
+            <Notify>Mandatory</Notify>
+            <Indicate>Mandatory</Indicate>
+            <WritableAuxilliaries>Excluded</WritableAuxilliaries>
+            <Broadcast>Excluded</Broadcast>
+        </Properties>
+    </characteristic>
+    <characteristic name="Upgrade Data" uuid="279f9dab79be4663af1d24407347af13">
+        <requirement>Mandatory</requirement>
+        <Properties>
+            <Read>Excluded</Read>
+            <Write>Mandatory</Write>
+            <WriteWithoutResponse>Excluded</WriteWithoutResponse>
+            <SignedWrite>Excluded</SignedWrite>
+            <ReliableWrite>Excluded</ReliableWrite>
+            <Notify>Excluded</Notify>
+            <Indicate>Excluded</Indicate>
+            <WritableAuxilliaries>Excluded</WritableAuxilliaries>
+            <Broadcast>Excluded</Broadcast>
+        </Properties>
+    </characteristic>
+    <characteristic name="Current App" uuid="00001013d10211e19b2300025b00a5a5">
+        <requirement>Mandatory</requirement>
+        <Properties>
+            <Read>Mandatory</Read>
+            <Write>Mandatory</Write>
+            <WriteWithoutResponse>Excluded</WriteWithoutResponse>
+            <SignedWrite>Excluded</SignedWrite>
+            <ReliableWrite>Excluded</ReliableWrite>
+            <Notify>Excluded</Notify>
+            <Indicate>Excluded</Indicate>
+            <WritableAuxilliaries>Excluded</WritableAuxilliaries>
+            <Broadcast>Excluded</Broadcast>
+        </Properties>
+    </characteristic>
+    <characteristic name="Data Transfer" uuid="27919da179b14661af1124417341af11">
+        <requirement>Mandatory</requirement>
+        <Properties>
+            <Read>Mandatory</Read>
+            <Write>Excluded</Write>
+            <WriteWithoutResponse>Excluded</WriteWithoutResponse>
+            <SignedWrite>Excluded</SignedWrite>
+            <ReliableWrite>Excluded</ReliableWrite>
+            <Notify>Excluded</Notify>
+            <Indicate>Excluded</Indicate>
+            <WritableAuxilliaries>Excluded</WritableAuxilliaries>
+            <Broadcast>Excluded</Broadcast>
+        </Properties>
+    </characteristic>
+</service>
+<service name="Device Information" uuid="180a">
+    <characteristic name="Serial Number" uuid="2a25">
+        <requirement>Mandatory</requirement>
+        <Properties>
+            <Read>Mandatory</Read>
+            <Write>Excluded</Write>
+            <WriteWithoutResponse>Excluded</WriteWithoutResponse>
+            <SignedWrite>Excluded</SignedWrite>
+            <ReliableWrite>Excluded</ReliableWrite>
+            <Notify>Excluded</Notify>
+            <Indicate>Excluded</Indicate>
+            <WritableAuxilliaries>Excluded</WritableAuxilliaries>
+            <Broadcast>Excluded</Broadcast>
+        </Properties>
+    </characteristic>
+    <characteristic name="Model Number" uuid="2a24">
+        <requirement>Mandatory</requirement>
+        <Properties>
+            <Read>Mandatory</Read>
+            <Write>Excluded</Write>
+            <WriteWithoutResponse>Excluded</WriteWithoutResponse>
+            <SignedWrite>Excluded</SignedWrite>
+            <ReliableWrite>Excluded</ReliableWrite>
+            <Notify>Excluded</Notify>
+            <Indicate>Excluded</Indicate>
+            <WritableAuxilliaries>Excluded</WritableAuxilliaries>
+            <Broadcast>Excluded</Broadcast>
+        </Properties>
+    </characteristic> 
+    <characteristic name="System ID" uuid="2a23">
+        <requirement>Mandatory</requirement>
+        <Properties>
+            <Read>Mandatory</Read>
+            <Write>Excluded</Write>
+            <WriteWithoutResponse>Excluded</WriteWithoutResponse>
+            <SignedWrite>Excluded</SignedWrite>
+            <ReliableWrite>Excluded</ReliableWrite>
+            <Notify>Excluded</Notify>
+            <Indicate>Excluded</Indicate>
+            <WritableAuxilliaries>Excluded</WritableAuxilliaries>
+            <Broadcast>Excluded</Broadcast>
+        </Properties>
+    </characteristic>   
+    <characteristic name="Hardware Revision" uuid="2a27">
+        <requirement>Mandatory</requirement>
+        <Properties>
+            <Read>Mandatory</Read>
+            <Write>Excluded</Write>
+            <WriteWithoutResponse>Excluded</WriteWithoutResponse>
+            <SignedWrite>Excluded</SignedWrite>
+            <ReliableWrite>Excluded</ReliableWrite>
+            <Notify>Excluded</Notify>
+            <Indicate>Excluded</Indicate>
+            <WritableAuxilliaries>Excluded</WritableAuxilliaries>
+            <Broadcast>Excluded</Broadcast>
+        </Properties>
+    </characteristic> 
+    <characteristic name="Firmware Revision" uuid="2a26">
+        <requirement>Mandatory</requirement>
+        <Properties>
+            <Read>Mandatory</Read>
+            <Write>Excluded</Write>
+            <WriteWithoutResponse>Excluded</WriteWithoutResponse>
+            <SignedWrite>Excluded</SignedWrite>
+            <ReliableWrite>Excluded</ReliableWrite>
+            <Notify>Excluded</Notify>
+            <Indicate>Excluded</Indicate>
+            <WritableAuxilliaries>Excluded</WritableAuxilliaries>
+            <Broadcast>Excluded</Broadcast>
+        </Properties>
+    </characteristic> 
+    <characteristic name="Software Revision" uuid="2a28">
+        <requirement>Mandatory</requirement>
+        <Properties>
+            <Read>Mandatory</Read>
+            <Write>Excluded</Write>
+            <WriteWithoutResponse>Excluded</WriteWithoutResponse>
+            <SignedWrite>Excluded</SignedWrite>
+            <ReliableWrite>Excluded</ReliableWrite>
+            <Notify>Excluded</Notify>
+            <Indicate>Excluded</Indicate>
+            <WritableAuxilliaries>Excluded</WritableAuxilliaries>
+            <Broadcast>Excluded</Broadcast>
+        </Properties>
+    </characteristic> 
+    <characteristic name="Manufacturer Name" uuid="2a29">
+        <requirement>Mandatory</requirement>
+        <Properties>
+            <Read>Mandatory</Read>
+            <Write>Excluded</Write>
+            <WriteWithoutResponse>Excluded</WriteWithoutResponse>
+            <SignedWrite>Excluded</SignedWrite>
+            <ReliableWrite>Excluded</ReliableWrite>
+            <Notify>Excluded</Notify>
+            <Indicate>Excluded</Indicate>
+            <WritableAuxilliaries>Excluded</WritableAuxilliaries>
+            <Broadcast>Excluded</Broadcast>
+        </Properties>
+    </characteristic> 
+    <characteristic name="PnP Id" uuid="2a50">
+        <requirement>Mandatory</requirement>
+        <Properties>
+            <Read>Mandatory</Read>
+            <Write>Excluded</Write>
+            <WriteWithoutResponse>Excluded</WriteWithoutResponse>
+            <SignedWrite>Excluded</SignedWrite>
+            <ReliableWrite>Excluded</ReliableWrite>
+            <Notify>Excluded</Notify>
+            <Indicate>Excluded</Indicate>
+            <WritableAuxilliaries>Excluded</WritableAuxilliaries>
+            <Broadcast>Excluded</Broadcast>
+        </Properties>
+    </characteristic>
+</service>
+<service name="LY-01 Service" uuid="1c68b3fad44343659e1cb22f44eb0816">
+    <characteristic name="Light Control" uuid="447c291d5318420b980a8f33e22c3744">
+        <requirement>Mandatory</requirement>
+        <Properties>
+            <Read>Mandatory</Read>
+            <Write>Mandatory</Write>
+            <WriteWithoutResponse>Excluded</WriteWithoutResponse>
+            <SignedWrite>Excluded</SignedWrite>
+            <ReliableWrite>Excluded</ReliableWrite>
+            <Notify>Mandatory</Notify>
+            <Indicate>Mandatory</Indicate>
+            <WritableAuxilliaries>Excluded</WritableAuxilliaries>
+            <Broadcast>Excluded</Broadcast>
+        </Properties>
+    </characteristic>
+</service>
+
+</device>
