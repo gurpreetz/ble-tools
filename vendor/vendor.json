@@ -1,0 +1,67 @@
+{
+	"comment": "",
+	"ignore": "test",
+	"package": [
+		{
+			"checksumSHA1": "Nv/dFKYusZACXomJXahK2DBbvF8=",
+			"path": "github.com/Songmu/prompter",
+			"revision": "f49666b0047d12850875d771340e1d862d9e7a0c",
+			"revisionTime": "2015-07-27T04:03:49Z"
+		},
+		{
+			"checksumSHA1": "Yv/nTEdonzKoqOMFqrgnjFx5lvE=",
+			"path": "github.com/currantlabs/gatt",
+			"revision": "ffe7cc96241e3f44ae35cfd0621b7da8a37959b9",
+			"revisionTime": "2016-07-07T19:35:34Z"
+		},
+		{
+			"checksumSHA1": "qV1do0I0KQTeaL3u9/YGkksiyyg=",
+			"path": "github.com/currantlabs/gatt/examples/option",
+			"revision": "ffe7cc96241e3f44ae35cfd0621b7da8a37959b9",
+			"revisionTime": "2016-07-07T19:35:34Z"
+		},
+		{
+			"checksumSHA1": "DqlJy1FLNjpTqVlCOBsxChA2c14=",
+			"path": "github.com/currantlabs/gatt/linux",
+			"revision": "ffe7cc96241e3f44ae35cfd0621b7da8a37959b9",
+			"revisionTime": "2016-07-07T19:35:34Z"
+		},
+		{
+			"checksumSHA1": "kU/EtvylajhgM1M0Hz7COga8BfM=",
+			"path": "github.com/currantlabs/gatt/linux/cmd",
+			"revision": "ffe7cc96241e3f44ae35cfd0621b7da8a37959b9",
+			"revisionTime": "2016-07-07T19:35:34Z"
+		},
+		{
+			"checksumSHA1": "TwUH9WkLmGAqydwBL3wSsfgiREU=",
+			"path": "github.com/currantlabs/gatt/linux/evt",
+			"revision": "ffe7cc96241e3f44ae35cfd0621b7da8a37959b9",
+			"revisionTime": "2016-07-07T19:35:34Z"
+		},
+		{
+			"checksumSHA1": "QDHbNIi2HJo5Y4Rj9WWLZbCee6U=",
+			"path": "github.com/currantlabs/gatt/linux/gioctl",
+			"revision": "ffe7cc96241e3f44ae35cfd0621b7da8a37959b9",
+			"revisionTime": "2016-07-07T19:35:34Z"
+		},
+		{
+			"checksumSHA1": "s7J5cCAkGnXc0JvRh6U5x+dlJfM=",
+			"path": "github.com/currantlabs/gatt/linux/socket",
+			"revision": "ffe7cc96241e3f44ae35cfd0621b7da8a37959b9",
+			"revisionTime": "2016-07-07T19:35:34Z"
+		},
+		{
+			"checksumSHA1": "rWL1Ly7W6xBDEfKucITpnwWrMII=",
+			"path": "github.com/currantlabs/gatt/linux/util",
+			"revision": "ffe7cc96241e3f44ae35cfd0621b7da8a37959b9",
+			"revisionTime": "2016-07-07T19:35:34Z"
+		},
+		{
+			"checksumSHA1": "ksK3y6tt//sGinYhIf7Q5THBwc0=",
+			"path": "github.com/currantlabs/gatt/xpc",
+			"revision": "ffe7cc96241e3f44ae35cfd0621b7da8a37959b9",
+			"revisionTime": "2016-07-07T19:35:34Z"
+		}
+	],
+	"rootPath": "github.com/bcdevices/ble-tools"
+}
