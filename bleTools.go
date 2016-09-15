@@ -203,7 +203,7 @@ func onPeriphConnected(p gatt.Peripheral, err error) {
 		if isCmpMode == true {
 			isFoundService, svc = xmlFindService(device, s.UUID().String())
 			if isFoundService == false {
-				fmt.Println("Unable to find service ", s.UUID().String(), "in XML Defintion")
+				fmt.Println("Unable to find service ", s.UUID().String(), "in XML Definition")
 				hasErr = true
 				continue
 			}
@@ -245,7 +245,7 @@ func onPeriphConnected(p gatt.Peripheral, err error) {
 			if isCmpMode == true && svc != nil {
 				isFoundChar, char := xmlFindChar(svc, c.UUID().String())
 				if isFoundChar == false {
-					fmt.Println("Unable to find char ", c.UUID().String(), "in XML Defintion")
+					fmt.Println("Unable to find char ", c.UUID().String(), "in XML Definition")
 					hasErr = true
 					continue
 				} else {
