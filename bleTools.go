@@ -20,16 +20,16 @@ var isCmpMode = false
 var isXMLMode = false
 var device *XMLDevice
 
-const maxScanResult uint8 = 30
+const maxScanResult uint32 = 100000
 const maxTimeoutTime time.Duration = 15 * time.Second
 
-var scanResultTotal uint8
+var scanResultTotal uint32
 
 // ScanMapResult represents a map entry of a scanned device
 type ScanMapResult struct {
 	peripheralName string
 	peripheral     gatt.Peripheral
-	scanResultNum  uint8
+	scanResultNum  uint32
 }
 
 // ScanListResult represents a list entry of a scanned device
