@@ -107,8 +107,8 @@ func main() {
 }
 
 // cmdGetDeviceConnectId gets the ID of the device to connect to
-func cmdGetDeviceConnectID() uint8 {
-	var id uint8
+func cmdGetDeviceConnectID() uint32 {
+	var id uint32
 	validInput := false
 	for validInput == false {
 		fmt.Print("Enter Device to connect to: ")
