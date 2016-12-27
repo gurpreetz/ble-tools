@@ -479,7 +479,7 @@ func (d *device) HandleXpcEvent(event xpc.Dict, err error) {
 		p.rspc <- message{id: id, args: args}
 
 	default:
-		//log.Printf("Unhandled event: %#v", event)
+		log.Printf("Unhandled event: %#v", event)
 	}
 }
 
