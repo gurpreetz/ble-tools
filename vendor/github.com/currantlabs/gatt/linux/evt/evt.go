@@ -4,6 +4,7 @@ import (
 	"bytes"
 	"encoding/binary"
 	"errors"
+	"fmt"
 
 	"github.com/currantlabs/gatt/linux/util"
 )
@@ -268,6 +269,9 @@ type LEConnectionCompleteEP struct {
 }
 
 func (e *LEConnectionCompleteEP) Unmarshal(b []byte) error {
+	if len(b) < 18 {
+		return fmt.Errorf("expected at least 18 bytes, got %d", len(b))
+	}
 	e.SubeventCode = o.Uint8(b[0:])
 	e.Status = o.Uint8(b[1:])
 	e.ConnectionHandle = o.Uint16(b[2:])
@@ -293,17 +297,25 @@ type LEAdvertisingReportEP struct {
 }
 
 func (e *LEAdvertisingReportEP) Unmarshal(b []byte) error {
+	if len(b) < 2 {
+		return errors.New("expected at least 2 bytes")
+	}
 	e.SubeventCode = o.Uint8(b)
 	b = b[1:]
 	e.NumReports = o.Uint8(b)
 	b = b[1:]
 	n := int(e.NumReports)
+
 	e.EventType = make([]uint8, n)
 	e.AddressType = make([]uint8, n)
 	e.Address = make([][6]byte, n)
 	e.Length = make([]uint8, n)
 	e.Data = make([][]byte, n)
 	e.RSSI = make([]int8, n)
+
+	if len(b) < (1+1+6+1)*n {
+		return fmt.Errorf("expected %d more bytes, got %d", (1+1+6+1)*n, len(b))
+	}
 
 	for i := 0; i < n; i++ {
 		e.EventType[i] = o.Uint8(b)
@@ -317,10 +329,17 @@ func (e *LEAdvertisingReportEP) Unmarshal(b []byte) error {
 		e.Address[i] = o.MAC(b)
 		b = b[6:]
 	}
+	var sumLength int
 	for i := 0; i < n; i++ {
 		e.Length[i] = o.Uint8(b)
+		sumLength += int(e.Length[i])
 		b = b[1:]
 	}
+
+	if len(b) < sumLength+(1)*n {
+		return fmt.Errorf("expected %d more bytes, got %d", sumLength+(1)*n, len(b))
+	}
+
 	for i := 0; i < n; i++ {
 		e.Data[i] = make([]byte, e.Length[i])
 		copy(e.Data[i], b)

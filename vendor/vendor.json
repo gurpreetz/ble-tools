@@ -9,59 +9,89 @@
 			"revisionTime": "2015-07-27T04:03:49Z"
 		},
 		{
-			"checksumSHA1": "Yv/nTEdonzKoqOMFqrgnjFx5lvE=",
+			"checksumSHA1": "ZpSIScGlqeQC1P/zmvrqpTl8DAY=",
 			"path": "github.com/currantlabs/gatt",
-			"revision": "ffe7cc96241e3f44ae35cfd0621b7da8a37959b9",
-			"revisionTime": "2016-07-07T19:35:34Z"
+			"revision": "f949eac78f4ebdd9793c441ea7a7ff330eb323b0",
+			"revisionTime": "2016-10-06T17:01:01Z"
 		},
 		{
 			"checksumSHA1": "qV1do0I0KQTeaL3u9/YGkksiyyg=",
 			"path": "github.com/currantlabs/gatt/examples/option",
-			"revision": "ffe7cc96241e3f44ae35cfd0621b7da8a37959b9",
-			"revisionTime": "2016-07-07T19:35:34Z"
+			"revision": "f949eac78f4ebdd9793c441ea7a7ff330eb323b0",
+			"revisionTime": "2016-10-06T17:01:01Z"
 		},
 		{
-			"checksumSHA1": "DqlJy1FLNjpTqVlCOBsxChA2c14=",
+			"checksumSHA1": "UaJwkat3VxnNVaojE7upy8bXTWk=",
 			"path": "github.com/currantlabs/gatt/linux",
-			"revision": "ffe7cc96241e3f44ae35cfd0621b7da8a37959b9",
-			"revisionTime": "2016-07-07T19:35:34Z"
+			"revision": "f949eac78f4ebdd9793c441ea7a7ff330eb323b0",
+			"revisionTime": "2016-10-06T17:01:01Z"
 		},
 		{
 			"checksumSHA1": "kU/EtvylajhgM1M0Hz7COga8BfM=",
 			"path": "github.com/currantlabs/gatt/linux/cmd",
-			"revision": "ffe7cc96241e3f44ae35cfd0621b7da8a37959b9",
-			"revisionTime": "2016-07-07T19:35:34Z"
+			"revision": "f949eac78f4ebdd9793c441ea7a7ff330eb323b0",
+			"revisionTime": "2016-10-06T17:01:01Z"
 		},
 		{
-			"checksumSHA1": "TwUH9WkLmGAqydwBL3wSsfgiREU=",
+			"checksumSHA1": "u6U7GYzbeQl7iuLl19rwqHHhovY=",
 			"path": "github.com/currantlabs/gatt/linux/evt",
-			"revision": "ffe7cc96241e3f44ae35cfd0621b7da8a37959b9",
-			"revisionTime": "2016-07-07T19:35:34Z"
+			"revision": "f949eac78f4ebdd9793c441ea7a7ff330eb323b0",
+			"revisionTime": "2016-10-06T17:01:01Z"
 		},
 		{
 			"checksumSHA1": "QDHbNIi2HJo5Y4Rj9WWLZbCee6U=",
 			"path": "github.com/currantlabs/gatt/linux/gioctl",
-			"revision": "ffe7cc96241e3f44ae35cfd0621b7da8a37959b9",
-			"revisionTime": "2016-07-07T19:35:34Z"
+			"revision": "f949eac78f4ebdd9793c441ea7a7ff330eb323b0",
+			"revisionTime": "2016-10-06T17:01:01Z"
 		},
 		{
 			"checksumSHA1": "s7J5cCAkGnXc0JvRh6U5x+dlJfM=",
 			"path": "github.com/currantlabs/gatt/linux/socket",
-			"revision": "ffe7cc96241e3f44ae35cfd0621b7da8a37959b9",
-			"revisionTime": "2016-07-07T19:35:34Z"
+			"revision": "f949eac78f4ebdd9793c441ea7a7ff330eb323b0",
+			"revisionTime": "2016-10-06T17:01:01Z"
 		},
 		{
 			"checksumSHA1": "rWL1Ly7W6xBDEfKucITpnwWrMII=",
 			"path": "github.com/currantlabs/gatt/linux/util",
-			"revision": "ffe7cc96241e3f44ae35cfd0621b7da8a37959b9",
-			"revisionTime": "2016-07-07T19:35:34Z"
+			"revision": "f949eac78f4ebdd9793c441ea7a7ff330eb323b0",
+			"revisionTime": "2016-10-06T17:01:01Z"
 		},
 		{
 			"checksumSHA1": "ksK3y6tt//sGinYhIf7Q5THBwc0=",
 			"path": "github.com/currantlabs/gatt/xpc",
-			"revision": "ffe7cc96241e3f44ae35cfd0621b7da8a37959b9",
-			"revisionTime": "2016-07-07T19:35:34Z"
+			"revision": "f949eac78f4ebdd9793c441ea7a7ff330eb323b0",
+			"revisionTime": "2016-10-06T17:01:01Z"
+		},
+		{
+			"checksumSHA1": "I4njd26dG5hxFT2nawuByM4pxzY=",
+			"path": "github.com/mattn/go-colorable",
+			"revision": "d228849504861217f796da67fae4f6e347643f15",
+			"revisionTime": "2016-11-03T16:00:40Z"
+		},
+		{
+			"checksumSHA1": "xZuhljnmBysJPta/lMyYmJdujCg=",
+			"path": "github.com/mattn/go-isatty",
+			"revision": "30a891c33c7cde7b02a981314b4228ec99380cca",
+			"revisionTime": "2016-11-23T14:36:37Z"
+		},
+		{
+			"checksumSHA1": "hBgLmZ/4mCxmnH88mqFKBkpJFUY=",
+			"path": "github.com/mgutz/ansi",
+			"revision": "c286dcecd19ff979eeb73ea444e479b903f2cfcb",
+			"revisionTime": "2015-09-14T16:22:38Z"
+		},
+		{
+			"checksumSHA1": "DUdWW5gRHBk2zTxGQZoH1KLxFtc=",
+			"path": "github.com/mgutz/logxi/v1",
+			"revision": "aebf8a7d67ab4625e0fd4a665766fef9a709161b",
+			"revisionTime": "2016-10-27T14:08:23Z"
+		},
+		{
+			"checksumSHA1": "uTQtOqR0ePMMcvuvAIksiIZxhqU=",
+			"path": "golang.org/x/sys/unix",
+			"revision": "d75a52659825e75fff6158388dddc6a5b04f9ba5",
+			"revisionTime": "2016-12-14T18:38:57Z"
 		}
 	],
-	"rootPath": "github.com/bcdevices/ble-tools"
+	"rootPath": "github.com/gurpreetz/ble-tools"
 }

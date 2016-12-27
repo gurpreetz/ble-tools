@@ -360,6 +360,25 @@ func (h *HCI) handleDisconnectionComplete(b []byte) error {
 	return nil
 }
 
+func (h *HCI) handleLTKRequest(b []byte) {
+	ep := &evt.LELTKRequestEP{}
+	if err := ep.Unmarshal(b); err != nil {
+		log.Printf("ltkrequest: error, parsing request")
+		return
+	}
+	hh := ep.ConnectionHandle
+	h.connsmu.Lock()
+	defer h.connsmu.Unlock()
+	_, found := h.conns[hh]
+	if !found {
+		// should not happen, just be cautious for now.
+		log.Printf("ltkrequest: error, connection 0x%04X probably expired", hh)
+		return
+	}
+	h.c.Send(cmd.LELTKNegReply{ ConnectionHandle: hh })
+	// TODO: implement proper key management
+}
+
 func (h *HCI) handleLEMeta(b []byte) error {
 	code := evt.LEEventCode(b[0])
 	switch code {
@@ -370,7 +389,8 @@ func (h *HCI) handleLEMeta(b []byte) error {
 	case evt.LEAdvertisingReport:
 		go h.handleAdvertisement(b)
 	// case evt.LEReadRemoteUsedFeaturesComplete:
-	// case evt.LELTKRequest:
+	case evt.LELTKRequest:
+		go h.handleLTKRequest(b)
 	// case evt.LERemoteConnectionParameterRequest:
 	default:
 		return fmt.Errorf("Unhandled LE event: %s, [ % X ]", code, b)
